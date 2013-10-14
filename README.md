@@ -39,12 +39,12 @@ Why Cao? 为毛操?
 Suppose you want to write a new program, something like a text editor. 
 What language would you write it in?
 
-    * It has to be as fast as possible, so interpreted languages are out.
-    * You don't want to micro manage memory, so C is out.
-    * You don't want to require programmers to have a degree, so C++ is out.
-    * You want fast startup and not depend on a big runtime, so Java is out.
-    * It has to run on most systems, anything with a C compiler, so D is out.
-    * You want to have fun making something new.
+* It has to be as fast as possible, so interpreted languages are out.
+* You don't want to micro manage memory, so C is out.
+* You don't want to require programmers to have a degree, so C++ is out.
+* You want fast startup and not depend on a big runtime, so Java is out.
+* It has to run on most systems, anything with a C compiler, so D is out.
+* You want to have fun making something new.
 
 No existing language really meets these demands, so let's create a new one that does!
 
@@ -57,21 +57,21 @@ Goals 目标
 =========
 More on the **Goals** page.
 
-    * easy to read back - code is read N times more often than it is written
-    * avoid common mistakes - make it difficult to write bad code (but you can write hacks if you really want to)
-    * keep it short and clear, don't state the same thing twice - no header files, don't repeat type specs
-    * the effect of a statement should be predictable and not depend on something in another file
-    * efficient execution: no startup delay, reasonable memory use - no Just In Time compiler effects, minimize "stop the world" garbage collection.
-    * support a wide range of applications - Zimbu can be used to write an OS kernel, a short script and a big GUI application
-    * portable - be able to compile and run on almost any system
-    * many standard data types, modules and classes - most things you need are already there
+* easy to read back - code is read N times more often than it is written
+* avoid common mistakes - make it difficult to write bad code (but you can write hacks if you really want to)
+* keep it short and clear, don't state the same thing twice - no header files, don't repeat type specs
+* the effect of a statement should be predictable and not depend on something in another file
+* efficient execution: no startup delay, reasonable memory use - no Just In Time compiler effects, minimize "stop the world" garbage collection.
+* support a wide range of applications - Zimbu can be used to write an OS kernel, a short script and a big GUI application
+* portable - be able to compile and run on almost any system
+* many standard data types, modules and classes - most things you need are already there
     
 Choices
 =======
-    * convert the program to C and use the C compiler to produce machine code (could be something else later)
-    * mostly use static type checking, also allow runtime type checking
-    * object oriented, all data is handled like an object, but there also are simple types
-    * an import defines one symbol, this avoids name conflicts in large projects
-    * the standard modules and classes are available without imports, avoids boring work
-    * many modules are part of the language, they work the same way everywhere
-    * all keywords are in capitals, you can use all other names without worrying about the next version breaking your program
+* convert the program to C and use the C compiler to produce machine code (could be something else later)
+* mostly use static type checking, also allow runtime type checking
+* object oriented, all data is handled like an object, but there also are simple types
+* an import defines one symbol, this avoids name conflicts in large projects
+* the standard modules and classes are available without imports, avoids boring work
+* many modules are part of the language, they work the same way everywhere
+* all keywords are in capitals, you can use all other names without worrying about the next version breaking your program
