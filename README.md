@@ -1,4 +1,4 @@
-cao
+Cao
 ===
 
 The Cao Programming Language.
